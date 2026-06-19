@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Product Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <h1><i class="fa-solid fa-cart-shopping"></i> E-Commerce Product Dashboard</h1>
+    </header>
+
+    <section class="controls">
+        <div class="search-wrapper">
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <input type="text" id="search" placeholder="Search Product...">
+        </div>
+        <select id="category">
+            <option value="all">All Categories</option>
+            <option value="men's clothing">Men's Clothing</option>
+            <option value="women's clothing">Women's Clothing</option>
+            <option value="electronics">Electronics</option>
+            <option value="jewelery">Jewelry</option>
+        </select>
+        <div class="cart-box">
+            <i class="fa-solid fa-cart-shopping"></i> Cart : <span id="cartCount">0</span>
+        </div>
+    </section>
+
+    <section id="stats"></section>
+
+    <section>
+        <h2 class="title">Products</h2>
+        <div id="products" class="products-container"></div>
+    </section>
+
+    <section id="cart">
+        <h2 class="title"><i class="fa-solid fa-cart-shopping"></i> Cart Items</h2>
+        <div id="cartItems">
+            <p class="empty-cart">Cart is Empty</p>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
